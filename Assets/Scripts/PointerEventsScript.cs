@@ -27,6 +27,7 @@ public class PointerEventsScript : MonoBehaviour
 
     public void PointerClick()
     {
-       // Instantiate(moreBread,new Vector3(1,1,0));
+        var position = new Vector3 (Random.Range(-8.0f, 9.0f), Random.Range(-4.0f, 6.0f), 0);
+        Instantiate(moreBread, position, Quaternion.identity);
     }
 }
