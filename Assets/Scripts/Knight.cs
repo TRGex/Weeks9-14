@@ -21,7 +21,7 @@ public class Knight : MonoBehaviour
         float direction = Input.GetAxis("Horizontal");
         sr.flipX = direction < 0; //Basically an if statement
 
-        animator.SetFloat("speed", Mathf.Abs(direction)); //Gives back size of number (no + or =)
+        animator.SetFloat("speed", Mathf.Abs(direction)); //Gives back size of number (no + or -)
 
         if (Input.GetMouseButtonDown(0))
         {
